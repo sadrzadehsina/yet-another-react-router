@@ -1,6 +1,6 @@
 import React from 'react';
 import { createBrowserHistory } from 'history';
-import { locationRoute } from './utils';
+import { locationToRoute } from './utils';
 
 export const history = createBrowserHistory();
 

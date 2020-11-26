@@ -1,0 +1,9 @@
+{
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "dependencies": {
+    "history": "^5.0.0",
+    "querystringify": "^2.2.0",
+    "react": "^17.0.1"
+  }
+}
