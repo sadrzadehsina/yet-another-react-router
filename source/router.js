@@ -8,11 +8,11 @@ const Router = ({ routes, NotFound, children }) => {
 
 	const [route, setRoute] = useState(history.location);
 
-	const routes = Object.keys(routes).map(key => routes[key].path);
+	const paths = Object.keys(routes).map(key => routes[key].path);
 
 	const unlisten = history.listen(handleRouteChange);
 
-	const is404 = routes.indexOf(route.path) === -1;
+	const is404 = paths.indexOf(route.path) === -1;
 
 	const handleRouteChange = location => setRoute({ route: locationToRoute(location) });
 
